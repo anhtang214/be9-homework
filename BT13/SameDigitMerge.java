@@ -1,6 +1,7 @@
 package BT13;
 
 public class SameDigitMerge {
+    // Time complexity: O(n)
     public static int sameDigitMerge(int[] numbers) {
         int[] firstDigitCount = new int[10];
         int[] lastDigitCount = new int[10];
