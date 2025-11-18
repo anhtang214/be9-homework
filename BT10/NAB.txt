@@ -1,0 +1,4 @@
+anh1,anh1,anh1,098908,0
+anh2,anh2,anh2,2897349,2
+anh3,anh3,anh3,982374,0
+anh2,a,a,a,0
