@@ -2,6 +2,7 @@ package BT13;
 
 public class ValueOccurrences {
     public static int valueOccurrences(int[] nums) {
+        // Time complexity: O(n)
         int prevNum = nums[0], index = 1, count = 1, result = 0;
         while (index < nums.length) {
             if (nums[index] == prevNum) {

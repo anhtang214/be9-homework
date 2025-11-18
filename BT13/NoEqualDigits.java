@@ -2,6 +2,8 @@ package BT13;
 
 public class NoEqualDigits {
     public static int noEqualDigits(int num) {
+        // Time complexity: O(n) where n = length of digit
+        // Worst case: O(n+1) where n = length of digit
         if (num < 10) {
             return num + 1;
         }
