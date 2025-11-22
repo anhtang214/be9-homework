@@ -20,8 +20,8 @@ public class SameDigitMerge {
     }
 
     public static void main(String[] args) {
-        int[] nums1 = {30,12,29,91};
-        int[] nums2 = {122,21,21,23};
+        int[] nums1 = {30,12,29,91};  // 3
+        int[] nums2 = {122,21,21,23}; // 5
         int[] nums3 = {12, 52, 32, 42}; // 0
         int[] nums4 = {12, 12, 12, 21}; // 6: [12,21] * 3 + [21,12] * 3
         int[] nums5 = {12, 23, 34, 41}; // 4
@@ -30,5 +30,6 @@ public class SameDigitMerge {
         System.out.println(sameDigitMerge(nums3));
         System.out.println(sameDigitMerge(nums4));
         System.out.println(sameDigitMerge(nums5));
+        System.out.println(Math.sqrt(2));
     }
 }

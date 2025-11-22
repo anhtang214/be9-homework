@@ -27,5 +27,6 @@ public class ValueOccurrences {
         System.out.println(valueOccurrences(nums2));
         System.out.println(valueOccurrences(nums3));
         System.out.println(valueOccurrences(nums4));
+        System.out.println(Math.sqrt(2));
     }
 }
