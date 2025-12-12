@@ -21,7 +21,7 @@ public class FindIntervalInArray {
                 lastSeen[index] = i;
                 if (uniqueCount == LRLength) {
                     int minIndex = lastSeen[0];
-                    for (int j = 1; j < LRLength; j++) {
+                    for (int j = 1; j < LRLength; j++) { // khi windows = size thi dung, khong can di den cuoi
                         minIndex = Math.min(minIndex, lastSeen[j]);
                     }
                     result = Math.min(result, i - minIndex + 1);
@@ -32,7 +32,8 @@ public class FindIntervalInArray {
             return result;
         }
         return -1;
-    }
+    } // code lai bai nay bang sliding window
+      // create, get index, delete an element, add an element
 
     public static void main(String[] args) {
         System.out.println(findIntervalInArray(new int[] { 2, 1, 4, 3, 2, 1, 1, 4 }, 2, 4)); // 3

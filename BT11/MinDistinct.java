@@ -3,45 +3,28 @@ package BT11;
 import java.util.Arrays;
 
 public class MinDistinct {
-    public int findMissingNum(int startIndex, int[] count) {
-        for (int i = startIndex; i < count.length; i++) {
-            if (count[i] == 0) {
-                return i;
-            }
+    public MinDistinct() {
+    }
+
+    public static int minDistinct(int[] var0) {
+        int var1 = 0;
+        Arrays.sort(var0);
+        System.out.println(Arrays.toString(var0));
+
+        for(int var2 = 0; var2 < var0.length; ++var2) {
+            int var3 = var2 + 1;
+            var1 += Math.abs(var0[var2] - var3);
         }
-        
+
+        return var1;
     }
 
-    public static int minDistinct2(int[] A) {
-        int result = 0;
-        int[] count = new int[A.length];
-        while (true) {
-
-        }
-        for (int i = 0; i < A.length; i++) {
-            int expectedValue = i + 1;
-            result += Math.abs(A[i] - expectedValue);
-        } 
-        return result;
-    }
-
-
-    public static int minDistinct(int[] A) {
-        int result = 0;
-        Arrays.sort(A);
-        for (int i = 0; i < A.length; i++) {
-            int expectedValue = i + 1;
-            result += Math.abs(A[i] - expectedValue);
-        } 
-        return result;
-    }
-
-    public static void main(String[] args) {
-        int[] A1 = {1,2,1};
-        int[] A2 = {2,1,4,4};
-        int[] A3 = {6,2,3,5,6,3};
-        System.out.println(minDistinct(A1));
-        System.out.println(minDistinct(A2));
-        System.out.println(minDistinct(A3));
+    public static void main(String[] var0) {
+        int[] var1 = new int[]{1, 2, 1};
+        int[] var2 = new int[]{2, 1, 4, 4};
+        int[] var3 = new int[]{6, 2, 3, 5, 6, 3};
+        System.out.println(minDistinct(var1));
+        System.out.println(minDistinct(var2));
+        System.out.println(minDistinct(var3));
     }
 }

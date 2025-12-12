@@ -20,5 +20,6 @@ public class EvenPairsOnCycle {
         System.out.println(evenPairsOnCycle(A1));
         System.out.println(evenPairsOnCycle(A2));
         System.out.println(evenPairsOnCycle(A3));
+        System.out.println(Math.sqrt(2));
     }
 }
